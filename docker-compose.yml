@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
-      - bazarlu:/var/www/html
+      - .:/var/www/html
 
   db:
     image: mysql:5.7
@@ -24,7 +24,7 @@ services:
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - bazarlu_db:/var/lib/mysql
+      - wordpress_db:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin
@@ -36,5 +36,4 @@ services:
 
 
 volumes:
-  bazarlu:
-  bazarlu_db:
+  wordpress_db:
