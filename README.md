@@ -1,3 +1,3 @@
 # docker-wordpress
 
-Arquivo docker-compose.yml para iniciar container para desenvolvimento utilizando wordpress.
+Arquivo base docker-compose.yml para iniciar um container para desenvolvimento utilizando wordpress.
